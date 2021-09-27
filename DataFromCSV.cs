@@ -1,15 +1,14 @@
 ﻿using System.Data;
 using System.IO;
-using System.Text.RegularExpressions;
 
 namespace DataToZPL
 {
     public static class DataFromCSV
     {
         
-        public static System.Data.DataTable LabelDetailsFromCSV(string strFilePath)
+        public static DataTable LabelDetailsFromCSV(string strFilePath)
         {
-            System.Data.DataTable dt = new System.Data.DataTable();
+            DataTable dt = new DataTable();
             using (StreamReader sr = new StreamReader(strFilePath))
             {
                 string[] headers = sr.ReadLine().Split(',');

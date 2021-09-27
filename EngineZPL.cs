@@ -1,8 +1,6 @@
 ﻿using System;
-using System.CodeDom;
 using System.Data;
 using System.IO;
-using System.Linq;
 
 namespace DataToZPL
 {
@@ -15,19 +13,20 @@ namespace DataToZPL
         /// <param name="type"></param>
         public void ZPLGenerator(DataTable dataTableDetail, EnumLabelType type)
         {
+            int i = 0;
             foreach (DataRow dataRow in dataTableDetail.Rows)
             {
                 foreach (var item in dataRow.ItemArray)
                 {
                     LabelTempValuesDetail.ValuePackDetail = item.ToString();
-
+                    i++;
                     if (type == EnumLabelType.BOX)
                     {
-                        Config.FileNameScripTxt = "BOX_" + LabelTempValuesDetail._0_ + ".txt";
+                        Config.FileNameScripTxt = "BOX_"+ i +".txt";
                     }
                     if (type == EnumLabelType.PALLET)
                     {
-                        Config.FileNameScripTxt = "PALLET_" + LabelTempValuesDetail._0_ + ".txt";
+                        Config.FileNameScripTxt = "PALLET_" + i + ".txt";
                     }
 
                     using (StreamWriter streamWriter = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameScripTxt + @"\" + Config.FileNameScripTxt))
@@ -85,43 +84,58 @@ namespace DataToZPL
                             {
                                 streamWriter.WriteLine(LabelTempValuesDetail._8_);
                             }
+                            else if (t == LabelTempValuesHeader._9_)
+                            {
+                                streamWriter.WriteLine(LabelTempValuesDetail._9_);
+                            }
+                            else if (t == LabelTempValuesHeader._10_)
+                            {
+                                streamWriter.WriteLine(LabelTempValuesDetail._10_);
+                            }
+                            else if (t == LabelTempValuesHeader._11_)
+                            {
+                                streamWriter.WriteLine(LabelTempValuesDetail._11_);
+                            }
+                            else if (t == LabelTempValuesHeader._12_)
+                            {
+                                streamWriter.WriteLine(LabelTempValuesDetail._12_);
+                            }
+                            else if (t == LabelTempValuesHeader._13_)
+                            {
+                                streamWriter.WriteLine(LabelTempValuesDetail._13_);
+                            }
+                            else if (t == LabelTempValuesHeader._14_)
+                            {
+                                streamWriter.WriteLine(LabelTempValuesDetail._14_);
+                            }
+                            else if (t == LabelTempValuesHeader._15_)
+                            {
+                                streamWriter.WriteLine(LabelTempValuesDetail._15_);
+                            }
+                            else if (t == LabelTempValuesHeader._16_)
+                            {
+                                streamWriter.WriteLine(LabelTempValuesDetail._16_);
+                            }
+                            else if (t == LabelTempValuesHeader._17_)
+                            {
+                                streamWriter.WriteLine(LabelTempValuesDetail._17_);
+                            }
+                            else if (t == LabelTempValuesHeader._18_)
+                            {
+                                streamWriter.WriteLine(LabelTempValuesDetail._18_);
+                            }
+                            else if (t == LabelTempValuesHeader._19_)
+                            {
+                                streamWriter.WriteLine(LabelTempValuesDetail._19_);
+                            }
+                            else if (t == LabelTempValuesHeader._20_)
+                            {
+                                streamWriter.WriteLine(LabelTempValuesDetail._20_);
+                            }
                             else
                             {
                                 streamWriter.WriteLine(t);
                             }
-                            //switch (t)
-                            //{
-                            //    case ("<0>"):
-                            //        streamWriter.WriteLine(LabelTempValuesDetail._0_);
-                            //        break;
-                            //    case ("<1>"):
-                            //        streamWriter.WriteLine(LabelTempValuesDetail._1_);
-                            //        break;
-                            //    case ("<2>"):
-                            //        streamWriter.WriteLine(LabelTempValuesDetail._2_);
-                            //        break;
-                            //    case ("<3>"):
-                            //        streamWriter.WriteLine(LabelTempValuesDetail._3_);
-                            //        break;
-                            //    case ("<4>"):
-                            //        streamWriter.WriteLine(LabelTempValuesDetail._4_);
-                            //        break;
-                            //    case ("<5>"):
-                            //        streamWriter.WriteLine(LabelTempValuesDetail._5_);
-                            //        break;
-                            //    case ("<6>"):
-                            //        streamWriter.WriteLine(LabelTempValuesDetail._6_);
-                            //        break;
-                            //    case ("<7>"):
-                            //        streamWriter.WriteLine(LabelTempValuesDetail._7_);
-                            //        break;
-                            //    case ("<8>"):
-                            //        streamWriter.WriteLine(LabelTempValuesDetail._8_);
-                            //        break;
-                            //    default:
-                            //        streamWriter.WriteLine(t);
-                            //        break;
-                            //}
                         }
 
                         streamReader.Close();
