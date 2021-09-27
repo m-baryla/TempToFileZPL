@@ -1,6 +1,9 @@
 ItemNumberCetes
 ItemNumberCustomer
 ItemDescription
+BOX
+BOX
+BOX
 Pieces
 PiecesPerPackage
 Batch

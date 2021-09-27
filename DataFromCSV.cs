@@ -1,13 +1,13 @@
 ﻿using System.Data;
 using System.IO;
-using _Excel = Microsoft.Office.Interop.Excel;
+using System.Text.RegularExpressions;
 
 namespace DataToZPL
 {
     public static class DataFromCSV
     {
         
-        public static System.Data.DataTable ConvertCSVtoDataTable(string strFilePath)
+        public static System.Data.DataTable LabelDetailsFromCSV(string strFilePath)
         {
             System.Data.DataTable dt = new System.Data.DataTable();
             using (StreamReader sr = new StreamReader(strFilePath))
@@ -16,6 +16,7 @@ namespace DataToZPL
                 foreach (string header in headers)
                 {
                     dt.Columns.Add(header);
+                    LabelTempValuesHeader.ValuePackHeader = header;
                 }
                 while (!sr.EndOfStream)
                 {
@@ -30,5 +31,6 @@ namespace DataToZPL
             }
             return dt;
         }
+
     }
 }

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataToZPL
 {
@@ -13,6 +9,8 @@ namespace DataToZPL
         public static string FileNameCSVData = ConfigurationManager.AppSettings["CSV_file_name"];
         public static string BOX_FileNameTempTxtData = ConfigurationManager.AppSettings["Temp_file_BOX"];
         public static string PALLET_FileNameTempTxtData = ConfigurationManager.AppSettings["Temp_file_PALLET"];
+
+        public static char SplitChar = Convert.ToChar(ConfigurationManager.AppSettings["Split_char"]);
 
         public static string FolderNameScripTxt = ConfigurationManager.AppSettings["Script_folder"];
         public static string FolderNameExelData = ConfigurationManager.AppSettings["CSV_folder"];
