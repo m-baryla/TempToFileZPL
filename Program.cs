@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace DataToZPL
 {
@@ -11,6 +12,7 @@ namespace DataToZPL
 
             Console.WriteLine("1 - BOX");
             Console.WriteLine("2 - PALLET");
+            Console.WriteLine("3 - TEST");
 
             choise = Convert.ToInt32(Console.ReadLine());
 
@@ -19,12 +21,17 @@ namespace DataToZPL
                 case 1:
                 {
                     var data_detail_BOX = DataFromCSV.LabelDetailsFromCSV(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameCSVData + @"\" + Config.BOX_FileNameCSVData);
-                    engine.ZPLGenerator(data_detail_BOX, EnumLabelType.BOX);
+                    engine.ZPLGenerator(data_detail_BOX, EnumLabelType.BOX, 10);
                 } break;
                 case 2:
                 {
                     var data_detail_PALLET = DataFromCSV.LabelDetailsFromCSV(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameCSVData + @"\" + Config.PALLET_FileNameCSVData);
-                    engine.ZPLGenerator(data_detail_PALLET, EnumLabelType.PALLET);
+                    engine.ZPLGenerator(data_detail_PALLET, EnumLabelType.PALLET, 13);
+                } break;
+                case 3:
+                {
+                    var data_detail_PALLET = DataFromCSV.LabelDetailsFromCSV(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameCSVData + @"\" + Config.TEST_FileNameCSVData);
+                    engine.ZPLGenerator(data_detail_PALLET, EnumLabelType.TEST, 3);
                 } break;
                 default:
                 {

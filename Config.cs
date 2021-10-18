@@ -17,5 +17,10 @@ namespace DataToZPL
         public static string FolderNameScripTxt = ConfigurationManager.AppSettings["Script_folder"];
         public static string FolderNameCSVData = ConfigurationManager.AppSettings["CSV_folder"];
         public static string FolderNameTempTxtData = ConfigurationManager.AppSettings["Temp_folder"];
+
+
+        public static string TEST_FileNameCSVData = ConfigurationManager.AppSettings["CSV_file_name_TEST"];
+        public static string TEST_FileNameTempTxtData = ConfigurationManager.AppSettings["Temp_file_TEST"];
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿public enum EnumLabelType
 {
     BOX,
-    PALLET
+    PALLET,
+    TEST
 }

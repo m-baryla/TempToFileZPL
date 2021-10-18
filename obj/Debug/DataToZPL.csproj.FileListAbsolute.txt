@@ -1,8 +1,15 @@
 D:\Source\_MySource\TempToFileZPL\DataToZPL\bin\Debug\DataToZPL.exe.config
 D:\Source\_MySource\TempToFileZPL\DataToZPL\bin\Debug\DataToZPL.exe
 D:\Source\_MySource\TempToFileZPL\DataToZPL\bin\Debug\DataToZPL.pdb
-D:\Source\_MySource\TempToFileZPL\DataToZPL\obj\Debug\DataToZPL.csprojAssemblyReference.cache
 D:\Source\_MySource\TempToFileZPL\DataToZPL\obj\Debug\DataToZPL.csproj.ResolveComReference.cache
 D:\Source\_MySource\TempToFileZPL\DataToZPL\obj\Debug\DataToZPL.csproj.CoreCompileInputs.cache
 D:\Source\_MySource\TempToFileZPL\DataToZPL\obj\Debug\DataToZPL.exe
 D:\Source\_MySource\TempToFileZPL\DataToZPL\obj\Debug\DataToZPL.pdb
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Debug\DataToZPL.exe.config
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Debug\DataToZPL.exe
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Debug\DataToZPL.pdb
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\obj\Debug\DataToZPL.csprojAssemblyReference.cache
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\obj\Debug\DataToZPL.csproj.ResolveComReference.cache
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\obj\Debug\DataToZPL.csproj.CoreCompileInputs.cache
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\obj\Debug\DataToZPL.exe
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\obj\Debug\DataToZPL.pdb
