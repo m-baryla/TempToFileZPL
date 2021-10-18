@@ -21,14 +21,13 @@ namespace DataToZPL
             {
                 foreach (var item in dataRow.ItemArray)
                 {
-                    LabelTempValuesDetail.ValuePackDetail = item.ToString();
+                    //LabelTempValuesDetail.ValuePackDetail = item.ToString();
+                    //LabelTempValuesDetail.SpliterDetail(limit);
+                    //LabelTempValuesHeader.SpliterHeader(limit);
+                    DataFromCSV.ValuePackDetail = item.ToString();           
+                    DataFromCSV.SpliterDetail(limit);
+                    DataFromCSV.SpliterHeader(limit);
 
-                    LabelTempValuesHeader.SpliterHeader(limit);
-                    LabelTempValuesDetail.SpliterDetail(limit);
-
-                    //..
-                    var a = LabelTempValuesHeader._x_;
-                    var b = LabelTempValuesDetail._x_;
 
                     if (type == EnumLabelType.BOX)
                     {
@@ -67,19 +66,22 @@ namespace DataToZPL
                         Console.WriteLine(iox.Message);
                     }
 
-                    string editfile = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameScripTxt + @"\" + Config.FileNameScripTxt);
+                    string editFiles = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameScripTxt + @"\" + Config.FileNameScripTxt);
                     
                     for (int j = 0; j < limit; j++)
                     {
 
-                        editfile = editfile.Replace(LabelTempValuesHeader._x_[j], LabelTempValuesDetail._x_[j]);
+                        //editFiles = editFiles.Replace(LabelTempValuesHeader._x_[j], LabelTempValuesDetail._x_[j]);
+                        editFiles = editFiles.Replace(DataFromCSV._HEADER_[j], DataFromCSV._DETAIL_[j]);
 
-                        File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameScripTxt + @"\" + Config.FileNameScripTxt, editfile);
+                        File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameScripTxt + @"\" + Config.FileNameScripTxt, editFiles);
                     }
 
                 }
-                LabelTempValuesHeader._x_ = new List<string>();
-                LabelTempValuesDetail._x_ = new List<string>();
+                //LabelTempValuesHeader._x_ = new List<string>();
+                //LabelTempValuesDetail._x_ = new List<string>();
+                DataFromCSV._HEADER_ = new List<string>();
+                DataFromCSV._DETAIL_ = new List<string>();
                 i++;
             }
         }

@@ -20,18 +20,18 @@ namespace DataToZPL
             {
                 case 1:
                 {
-                    var data_detail_BOX = DataFromCSV.LabelDetailsFromCSV(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameCSVData + @"\" + Config.BOX_FileNameCSVData);
-                    engine.ZPLGenerator(data_detail_BOX, EnumLabelType.BOX, 10);
+                    var data_detail_BOX = DataFromCSV.ConvertCSVtoDataTable(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameCSVData + @"\" + Config.BOX_FileNameCSVData);
+                    engine.ZPLGenerator(data_detail_BOX, EnumLabelType.BOX, DataFromCSV.CountHeader(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameCSVData + @"\" + Config.BOX_FileNameCSVData));
                 } break;
                 case 2:
                 {
-                    var data_detail_PALLET = DataFromCSV.LabelDetailsFromCSV(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameCSVData + @"\" + Config.PALLET_FileNameCSVData);
-                    engine.ZPLGenerator(data_detail_PALLET, EnumLabelType.PALLET, 13);
+                    var data_detail_PALLET = DataFromCSV.ConvertCSVtoDataTable(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameCSVData + @"\" + Config.PALLET_FileNameCSVData);
+                    engine.ZPLGenerator(data_detail_PALLET, EnumLabelType.PALLET, DataFromCSV.CountHeader(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameCSVData + @"\" + Config.PALLET_FileNameCSVData));
                 } break;
                 case 3:
                 {
-                    var data_detail_PALLET = DataFromCSV.LabelDetailsFromCSV(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameCSVData + @"\" + Config.TEST_FileNameCSVData);
-                    engine.ZPLGenerator(data_detail_PALLET, EnumLabelType.TEST, 3);
+                    var data_detail_TEST = DataFromCSV.ConvertCSVtoDataTable(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameCSVData + @"\" + Config.TEST_FileNameCSVData);
+                    engine.ZPLGenerator(data_detail_TEST, EnumLabelType.TEST, DataFromCSV.CountHeader(AppDomain.CurrentDomain.BaseDirectory + @"\" + Config.FolderNameCSVData + @"\" + Config.TEST_FileNameCSVData));
                 } break;
                 default:
                 {
