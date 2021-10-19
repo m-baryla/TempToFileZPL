@@ -44,10 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseEngineZPL.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="DataFromCSV.cs" />
-    <Compile Include="EngineZPL.cs" />
+    <Compile Include="ZPL_CSV.cs" />
     <Compile Include="EnumLabelType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

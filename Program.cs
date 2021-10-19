@@ -9,7 +9,11 @@ namespace DataToZPL
         {
             int choise = 0;
 
-            EngineZPL engine = new EngineZPL();
+            var dir_BOX = Config.BaseDirDataCSVFiles + Config.BOX_FileNameCSVData;
+            var dir_PALLET = Config.BaseDirDataCSVFiles + Config.PALLET_FileNameCSVData;
+            var dir_TEST = Config.BaseDirDataCSVFiles + Config.TEST_FileNameCSVData;
+
+            ZPL_CSV zplCsv = new ZPL_CSV();
 
             Console.WriteLine("1 - BOX");
             Console.WriteLine("2 - PALLET");
@@ -21,18 +25,18 @@ namespace DataToZPL
             {
                 case 1:
                 {
-                    var data_detail_BOX = DataFromCSV.ConvertCSVtoDataTable(Config.BaseDirDataCSVFiles + Config.BOX_FileNameCSVData);
-                    engine.ZPLGenerator(data_detail_BOX, EnumLabelType.BOX, DataFromCSV.CountHeader(Config.BaseDirDataCSVFiles + Config.BOX_FileNameCSVData));
+                    var data_detail_BOX = DataFromCSV.ConvertCSVtoDataTable(dir_BOX);
+                    zplCsv.ZPLGeneratorFromCSV(data_detail_BOX, EnumLabelType.BOX, DataFromCSV.CountHeader(dir_BOX));
                 } break;
                 case 2:
                 {
-                    var data_detail_PALLET = DataFromCSV.ConvertCSVtoDataTable(Config.BaseDirDataCSVFiles + Config.PALLET_FileNameCSVData);
-                    engine.ZPLGenerator(data_detail_PALLET, EnumLabelType.PALLET, DataFromCSV.CountHeader(Config.BaseDirDataCSVFiles + Config.PALLET_FileNameCSVData));
+                    var data_detail_PALLET = DataFromCSV.ConvertCSVtoDataTable(dir_PALLET);
+                    zplCsv.ZPLGeneratorFromCSV(data_detail_PALLET, EnumLabelType.PALLET, DataFromCSV.CountHeader(dir_PALLET));
                 } break;
                 case 3:
                 {
-                    var data_detail_TEST = DataFromCSV.ConvertCSVtoDataTable(Config.BaseDirDataCSVFiles + Config.TEST_FileNameCSVData);
-                    engine.ZPLGenerator(data_detail_TEST, EnumLabelType.TEST, DataFromCSV.CountHeader(Config.BaseDirDataCSVFiles + Config.TEST_FileNameCSVData));
+                    var data_detail_TEST = DataFromCSV.ConvertCSVtoDataTable(dir_TEST);
+                    zplCsv.ZPLGeneratorFromCSV(data_detail_TEST, EnumLabelType.TEST, DataFromCSV.CountHeader(dir_TEST));
                 } break;
                 default:
                 {
