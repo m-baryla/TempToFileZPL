@@ -1,0 +1,13 @@
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Release\DataToZPL.exe.config
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Release\DataToZPL.exe
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Release\DataToZPL.pdb
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Release\CSV-ZPLGenerator.dll
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Release\Helper.dll
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Release\CSV-ZPLGenerator.pdb
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Release\Helper.pdb
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\obj\Release\DataToZPL.csprojAssemblyReference.cache
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\obj\Release\DataToZPL.csproj.ResolveComReference.cache
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\obj\Release\DataToZPL.csproj.CoreCompileInputs.cache
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\obj\Release\DataToZPL.csproj.CopyComplete
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\obj\Release\DataToZPL.exe
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\obj\Release\DataToZPL.pdb

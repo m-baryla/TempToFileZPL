@@ -1,0 +1,9 @@
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\CSV-ZPLGenerator\bin\Release\CSV-ZPLGenerator.dll
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\CSV-ZPLGenerator\bin\Release\CSV-ZPLGenerator.pdb
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\CSV-ZPLGenerator\bin\Release\Helper.dll
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\CSV-ZPLGenerator\bin\Release\Helper.pdb
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\CSV-ZPLGenerator\obj\Release\CSV-ZPLGenerator.csprojAssemblyReference.cache
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\CSV-ZPLGenerator\obj\Release\CSV-ZPLGenerator.csproj.CoreCompileInputs.cache
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\CSV-ZPLGenerator\obj\Release\CSV-ZPLGenerator.csproj.CopyComplete
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\CSV-ZPLGenerator\obj\Release\CSV-ZPLGenerator.dll
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\CSV-ZPLGenerator\obj\Release\CSV-ZPLGenerator.pdb

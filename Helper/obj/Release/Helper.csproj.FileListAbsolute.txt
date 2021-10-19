@@ -1,0 +1,5 @@
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\Helper\bin\Release\Helper.dll
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\Helper\bin\Release\Helper.pdb
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\Helper\obj\Release\Helper.csproj.CoreCompileInputs.cache
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\Helper\obj\Release\Helper.dll
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\Helper\obj\Release\Helper.pdb
