@@ -17,4 +17,4 @@ D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Debug\Helper.d
 D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Debug\CSV-ZPLGenerator.pdb
 D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Debug\Helper.pdb
 D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\obj\Debug\DataToZPL.csproj.CopyComplete
-D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Debug\Helper.dll.config
+D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\DataToZPL\bin\Debug\DataToZPL.exe.config

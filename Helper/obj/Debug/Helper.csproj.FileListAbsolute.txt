@@ -4,4 +4,3 @@ D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\Helper\bin\Debug\Helper.pdb
 D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\Helper\obj\Debug\Helper.dll
 D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\Helper\obj\Debug\Helper.pdb
 D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\Helper\obj\Debug\Helper.csprojAssemblyReference.cache
-D:\SOURCE\_MySource\MasterAppWinForms\TempToFileZPL\Helper\bin\Debug\Helper.dll.config
