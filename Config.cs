@@ -6,21 +6,24 @@ namespace DataToZPL
     public static class Config
     {
         public static string FileNameScripTxt = "";
-
-        public static string BOX_FileNameCSVData = ConfigurationManager.AppSettings["CSV_file_name_BOX"];
-        public static string PALLET_FileNameCSVData = ConfigurationManager.AppSettings["CSV_file_name_PALLET"];
-        public static string BOX_FileNameTempTxtData = ConfigurationManager.AppSettings["Temp_file_BOX"];
-        public static string PALLET_FileNameTempTxtData = ConfigurationManager.AppSettings["Temp_file_PALLET"];
-
         public static char SplitChar = Convert.ToChar(ConfigurationManager.AppSettings["Split_char"]);
 
-        public static string FolderNameScripTxt = ConfigurationManager.AppSettings["Script_folder"];
-        public static string FolderNameCSVData = ConfigurationManager.AppSettings["CSV_folder"];
-        public static string FolderNameTempTxtData = ConfigurationManager.AppSettings["Temp_folder"];
+        //STATIC VALUES TO BASE DIRECTION FOLDER NAMES
+        public static string BaseDirTempZPLFiles = AppDomain.CurrentDomain.BaseDirectory + @"\" + ConfigurationManager.AppSettings["Temp_folder"] + @"\";
+        public static string BaseDirDataCSVFiles = AppDomain.CurrentDomain.BaseDirectory + @"\" + ConfigurationManager.AppSettings["CSV_folder"] + @"\";
+        public static string BaseDirScriptFiles = AppDomain.CurrentDomain.BaseDirectory + @"\" + ConfigurationManager.AppSettings["Script_folder"] + @"\";
 
-
+        
+        //VALUES TO EDIT WHEN WE WANT ADD NEW DATA CSV AND TEMPLEMATE ZPL CODE
+        public static string BOX_FileNameCSVData = ConfigurationManager.AppSettings["CSV_file_name_BOX"];
+        public static string PALLET_FileNameCSVData = ConfigurationManager.AppSettings["CSV_file_name_PALLET"];
         public static string TEST_FileNameCSVData = ConfigurationManager.AppSettings["CSV_file_name_TEST"];
+
+        public static string BOX_FileNameTempTxtData = ConfigurationManager.AppSettings["Temp_file_BOX"];
+        public static string PALLET_FileNameTempTxtData = ConfigurationManager.AppSettings["Temp_file_PALLET"];
         public static string TEST_FileNameTempTxtData = ConfigurationManager.AppSettings["Temp_file_TEST"];
+
+
 
     }
 }

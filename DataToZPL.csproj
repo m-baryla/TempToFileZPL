@@ -45,10 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
+    <Compile Include="Data.cs" />
     <Compile Include="DataFromCSV.cs" />
     <Compile Include="EngineZPL.cs" />
-    <Compile Include="LabelTempValuesHeader.cs" />
-    <Compile Include="LabelTempValuesDetail.cs" />
     <Compile Include="EnumLabelType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
