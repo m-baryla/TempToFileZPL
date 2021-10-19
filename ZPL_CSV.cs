@@ -18,34 +18,10 @@ namespace DataToZPL
                 foreach (var item in dataRow.ItemArray)
                 {
                     DataFromCSV.ValuePackDetail = item.ToString();           
-                    DataFromCSV.SpliterDetail(limit);
-                    DataFromCSV.SpliterHeader(limit);
-
+                    DataFromCSV.SpliterData(limit);
                     GetFilesScriptName(type, i);
-                    var filesName = GetFilesZPLTemScript(type);
-
-                    try
-                    {
-                        File.Copy(Config.BaseDirTempZPLFiles + filesName, Config.BaseDirScriptFiles + Config.FileNameScripTxt, true);
-                    }
-                    catch (IOException iox)
-                    {
-                        Console.WriteLine(iox.Message);
-                    }
-
-                    string editFiles = File.ReadAllText(Config.BaseDirScriptFiles + Config.FileNameScripTxt);
-                    
-                    for (int j = 0; j < limit; j++)
-                    {
-
-                        editFiles = editFiles.Replace(Data._HEADER_[j], Data._DETAIL_[j]);
-
-                        File.WriteAllText(Config.BaseDirScriptFiles + Config.FileNameScripTxt, editFiles);
-                    }
-
+                    GeneratorZPLFiles(GetFilesZPLTemScript(type), limit);
                 }
-                Data._HEADER_ = new List<string>();
-                Data._DETAIL_ = new List<string>();
                 i++;
             }
         }

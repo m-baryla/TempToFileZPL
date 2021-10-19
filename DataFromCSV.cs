@@ -15,7 +15,6 @@ namespace DataToZPL
 
         public static DataTable ConvertCSVtoDataTable(string strFilePath)
         {
-
             DataTable dt = new DataTable();
             using (StreamReader sr = new StreamReader(strFilePath))
             {
@@ -25,7 +24,6 @@ namespace DataToZPL
                     dt.Columns.Add(header);
                     ValuePackHeader = header;
                 }
-
                 while (!sr.EndOfStream)
                 {
                     string[] rows = sr.ReadLine().Split(',');
@@ -34,11 +32,9 @@ namespace DataToZPL
                     {
                         dr[i] = rows[i];
                     }
-
                     dt.Rows.Add(dr);
                 }
             }
-
             return dt;
         }
 
@@ -50,36 +46,12 @@ namespace DataToZPL
             }
         }
 
-        public static void SpliterHeader(int limit)
+        public static void SpliterData(int limit)
         {
             for (int i = 0; i < limit; i++)
             {
                 Data._HEADER_.Add(ValuePackHeader.Split(Config.SplitChar)[i]);
-            }
-        }
-
-        public static void SpliterDetail(int limit)
-        {
-            for (int i = 0; i < limit; i++)
-            {
                 Data._DETAIL_.Add(ValuePackDetail.Split(Config.SplitChar)[i]);
-            }
-        }
-
-        public static void Test(string strFilePath)
-        {
-            var data_detail = ConvertCSVtoDataTable(" ");
-            foreach (DataRow dataRow in data_detail.Rows)
-            {
-                foreach (var item in dataRow.ItemArray)
-                {
-                    using (StreamReader sr = new StreamReader(strFilePath))
-                    {
-                        ValuePackDetail = item.ToString();
-                        SpliterDetail(sr.ReadLine().Split(';').Length);
-                        SpliterHeader(sr.ReadLine().Split(';').Length);
-                    }
-                }
             }
         }
     }
