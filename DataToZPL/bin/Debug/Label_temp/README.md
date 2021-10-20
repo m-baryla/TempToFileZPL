@@ -24,25 +24,49 @@ Stworzone foldery i pliki:
 
 BOX_dataBox - CSV
 
+<<<<<<< HEAD
+=======
+```
+>>>>>>> 3c02fdb6ddd9a45ca7640ac5966f093587d41890
 PALLET_data - CSV
 
+<<<<<<< HEAD
 TEST_data - CSV
 
 **Label_script**
+=======
+Label_script
+>>>>>>> 3c02fdb6ddd9a45ca7640ac5966f093587d41890
 
 BOX_0 - TXT
+<<<<<<< HEAD
+=======
+```
+>>>>>>> 3c02fdb6ddd9a45ca7640ac5966f093587d41890
 
 BOX_1 - TXT
 
 ...
 
 BOX_X - TXT
+<<<<<<< HEAD
 
 **Label_temp**
+=======
+```
+
+Label_temp
+>>>>>>> 3c02fdb6ddd9a45ca7640ac5966f093587d41890
 
 BOX_label - TXT
 
+<<<<<<< HEAD
 PALLET_label - TXT
+=======
+```
+PALLET_label - TXT
+```
+>>>>>>> 3c02fdb6ddd9a45ca7640ac5966f093587d41890
 
 Pliki i foldery powinny znajdowac w katalogu razem z plikiem exe nazwy plikow nie powinny ulegac zmianom.
 
