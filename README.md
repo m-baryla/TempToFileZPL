@@ -6,11 +6,11 @@ Przykladowe dane z pliku CSV.
 
 Pierwsza linia w pliku to naglowek w ktorym zdefiniowane sa elementy ktore zostana zamienione przez program na wartosci ponizej.
 
-Dla przykladu dla wartosci 
+Dla przykladu dla wartosci
 
 **^FH\^FD ITEM_NUMBER_CUSTOMER ^FS **
 
-w pliku txt z kodem ZPL zostanie podstawiona wartosc 
+w pliku txt z kodem ZPL zostanie podstawiona wartosc
 
 **^FH\^FD 51005038 ^FS**
 
@@ -20,51 +20,29 @@ w pliku txt z kodem ZPL zostanie podstawiona wartosc
 
 Stworzone foldery i pliki:
 
-Label_csv_data
+**Label_csv_data**
 
-```
-BOX_data - CSV
-```
+BOX_dataBox - CSV
 
-
-```
 PALLET_data - CSV
-```
 
+TEST_data - CSV
 
-Label_script
+**Label_script**
 
-```
 BOX_0 - TXT
-```
 
-
-```
 BOX_1 - TXT
-```
-
-
-```
-```
 
 ...
 
-```
 BOX_X - TXT
-```
 
+**Label_temp**
 
-Label_temp
-
-```
 BOX_label - TXT
-```
 
-
-```
 PALLET_label - TXT
-```
-
 
 Pliki i foldery powinny znajdowac w katalogu razem z plikiem exe nazwy plikow nie powinny ulegac zmianom.
 
@@ -78,7 +56,7 @@ CSV-ZPLGenerator - w rozwiazaniu znajdujaznjduja sie klasy odpowiedzialne za odc
 
 DataToZPL - w rozwiazaniu znajduja sie klasy odpowiedzialne za skopiowanie szablonu a nastepnie podmiane danych w plikach txt
 
-Helper - w rozwiazaniu znajduja sie klasy odpowiedzialne za odczytanie z wyzej wymionionych katalogow plikow CSV , TXT 
+Helper - w rozwiazaniu znajduja sie klasy odpowiedzialne za odczytanie z wyzej wymionionych katalogow plikow CSV , TXT
 
 ![](image/README/1634669976582.png)
 
